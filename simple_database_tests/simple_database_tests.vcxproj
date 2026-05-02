@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e0980d7a-c44b-4b1e-85f1-d92638fbba5a}</ProjectGuid>
+    <RootNamespace>simpledatabasetests</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Uni\KN K2\sem 1\SDP\simple_database\simple_database\database;../simple_database/;D:\Uni\KN K2\sem 1\SDP\simple_database\simple_database\value;D:\Uni\KN K2\sem 1\SDP\simple_database\simple_database\utils;D:\Uni\KN K2\sem 1\SDP\simple_database\simple_database\table;D:\Uni\KN K2\sem 1\SDP\simple_database\simple_database\sql;D:\Uni\KN K2\sem 1\SDP\simple_database\simple_database\row;D:\Uni\KN K2\sem 1\SDP\simple_database\simple_database\formula;D:\Uni\KN K2\sem 1\SDP\simple_database\simple_database\crc32;D:\Uni\KN K2\sem 1\SDP\simple_database\simple_database\command</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\simple_database\command\command.cpp" />
+    <ClCompile Include="..\simple_database\command\command_creator.cpp" />
+    <ClCompile Include="..\simple_database\command\command_executor.cpp" />
+    <ClCompile Include="..\simple_database\crc32\crc32.cpp" />
+    <ClCompile Include="..\simple_database\database\csv_parser.cpp" />
+    <ClCompile Include="..\simple_database\database\database.cpp" />
+    <ClCompile Include="..\simple_database\database\disk_storage.cpp" />
+    <ClCompile Include="..\simple_database\formula\formula_evaluator.cpp" />
+    <ClCompile Include="..\simple_database\formula\formula_parser.cpp" />
+    <ClCompile Include="..\simple_database\formula\formula_tokenizer.cpp" />
+    <ClCompile Include="..\simple_database\formula\logic_op_parser.cpp" />
+    <ClCompile Include="..\simple_database\formula\rel_parser.cpp" />
+    <ClCompile Include="..\simple_database\row\rows_binary_heap.cpp" />
+    <ClCompile Include="..\simple_database\row\row_comparer.cpp" />
+    <ClCompile Include="..\simple_database\row\row_sorter.cpp" />
+    <ClCompile Include="..\simple_database\sql\create_sql_parser.cpp" />
+    <ClCompile Include="..\simple_database\sql\drop_sql_parser.cpp" />
+    <ClCompile Include="..\simple_database\sql\insert_sql_parser.cpp" />
+    <ClCompile Include="..\simple_database\sql\remove_sql_parser.cpp" />
+    <ClCompile Include="..\simple_database\sql\select_query.cpp" />
+    <ClCompile Include="..\simple_database\sql\select_sql_parser.cpp" />
+    <ClCompile Include="..\simple_database\sql\select_tokenizer.cpp" />
+    <ClCompile Include="..\simple_database\table\column_types.cpp" />
+    <ClCompile Include="..\simple_database\table\col_info.cpp" />
+    <ClCompile Include="..\simple_database\table\col_info_io.cpp" />
+    <ClCompile Include="..\simple_database\table\col_type_io.cpp" />
+    <ClCompile Include="..\simple_database\table\table_info.cpp" />
+    <ClCompile Include="..\simple_database\utils\string_utils.cpp" />
+    <ClCompile Include="..\simple_database\utils\table_printer.cpp" />
+    <ClCompile Include="..\simple_database\value\date.cpp" />
+    <ClCompile Include="..\simple_database\value\datetime.cpp" />
+    <ClCompile Include="..\simple_database\value\datetime_comp_ops.cpp" />
+    <ClCompile Include="..\simple_database\value\date_comp_ops.cpp" />
+    <ClCompile Include="..\simple_database\value\value_comparer.cpp" />
+    <ClCompile Include="..\simple_database\value\value_io.cpp" />
+    <ClCompile Include="..\simple_database\value\value_parser.cpp" />
+    <ClCompile Include="catch_amalgamated.cpp" />
+    <ClCompile Include="test_command_creator.cpp" />
+    <ClCompile Include="test_crc32.cpp" />
+    <ClCompile Include="test_create_sql_parser.cpp" />
+    <ClCompile Include="test_csv_parser.cpp" />
+    <ClCompile Include="test_insert_sql_parser.cpp" />
+    <ClCompile Include="test_insert_sql_parser_faster_version.cpp" />
+    <ClCompile Include="test_select_sql_parser.cpp" />
+    <ClCompile Include="test_utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="catch_amalgamated.hpp" />
+    <ClInclude Include="test_utils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
